@@ -24,7 +24,7 @@ function paintInput() {
   input.className = "name__input";
   input.required = true;
   const form = document.createElement("form");
-  form.onsubmit = handleSubmit;
+  form.addEventListener("submit", handleSubmit);
   form.appendChild(input);
   nameContainer.appendChild(form);
 }
